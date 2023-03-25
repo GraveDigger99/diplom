@@ -149,6 +149,18 @@ h6 {
   max-width: 73.75rem;
 }
 
+.form__error {
+  position: absolute;
+  bottom: -15px;
+  color: red;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form-popup__line {
+  position: relative;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],

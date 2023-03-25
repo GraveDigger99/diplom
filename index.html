@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230325160152">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230325183027">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -1014,6 +1014,7 @@
 
 
 
+
 	<div id="popup-teachers" aria-hidden="true" class="popup popup_teachers teachers-popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -1073,8 +1074,6 @@
 			</div>
 		</div>
 	</div>
-
-
 	<div id="popup-callback" aria-hidden="true" class="popup popup_form form-popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -1098,21 +1097,20 @@
 								<div class="form-popup__name">Персонализация <br> с программы</div>
 							</div>
 						</div>
-						<form action="#" class="form-popup__form">
+						<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form-popup__form">
 							<div class="form-popup__line">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="input">
+								<input data-required autocomplete="off" type="text" name="username" data-error="Введите ваше имя" placeholder="Имя" class="input">
 							</div>
 							<div class="form-popup__line">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email" class="input">
+								<input data-required="email" autocomplete="off" type="email" name="usermail" data-error="Введите ваш Email" placeholder="Email" class="input">
 							</div>
 							<div class="form-popup__line">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон" class="input">
+								<input data-required autocomplete="off" type="text" name="userphone" data-error="Введите номер мобильного телефона" placeholder="Телефон" class="input">
 							</div>
 							<button type="submit" class="form-popup__button button">
 								Записаться на вводный урок
 							</button>
 							<p class="form-popup__copywrite">
-
 								Нажимая «Записатьсяна вводный урок », вы принимаете <br> <a href="#">условия соглашения</a>
 							</p>
 						</form>
@@ -1121,7 +1119,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230325160152"></script>
+	<script src="js/app.min.js?_v=20230325183027"></script>
 </body>
 
 </html>
