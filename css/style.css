@@ -497,9 +497,6 @@ body::after {
   position: relative;
 }
 
-.no-webp .form-popup__step:not(:last-child)::after{
-  background: url("https://englex.ru/app/themes/englex18/dist/images/englex22/dashed-line.png") 0 0 no-repeat; }
-
 .form-popup__step:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -507,6 +504,7 @@ body::after {
   left: 20px;
   width: 2px;
   height: 56px;
+  background: url("https://englex.ru/app/themes/englex18/dist/images/englex22/dashed-line.png") 0 0 no-repeat;
 }
 
 .form-popup__step img {
@@ -1667,13 +1665,11 @@ body::after {
   line-height: 1.375;
 }
 
-.no-webp .features-cost__item::before{
-  background: url("../img/icons/check.png") center/cover no-repeat; }
-
 .features-cost__item::before {
   content: "";
   width: 1rem;
   height: 1rem;
+  background: url("../img/icons/check.png") center/cover no-repeat;
 }
 
 .footer-cost__title {
@@ -2995,7 +2991,3 @@ body::after {
     background-color: #f76d63;
   }
 }
-
-.webp .form-popup__step:not(:last-child)::after{ background: url(https://englex.ru/app/themes/englex18/dist/images/englex22/dashed-line.webp) 0 0 no-repeat; }
-
-.webp .features-cost__item::before{ background: url(../img/icons/check.webp) center/cover no-repeat; }
